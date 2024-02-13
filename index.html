@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Daisy UI & Tailwind Css Link Start -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Daisy UI & Tailwind Css Link End -->
+
+    <!-- Google Font Link Start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Google Font Link End -->
+
+    <!-- Css Custom Font Class Start -->
+    <style>
+        .font-poppins {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .font-anton {
+            font-family: "Anton", sans-serif;
+        }
+    </style>
+    <!-- Css Custom Font Class End -->
+
+    <title>Alpa Clasher KeyBoard</title>
+</head>
+
+<body>
+    <main class="w-screen h-screen bg-[#010313] bg-[url('./images/background.png')] bg-no-repeat bg-center">
+        <section class="max-w-7xl mx-auto font-poppins">
+            <!-- Home Page -->
+            <div id="home-page" class="flex text-white flex-col justify-center items-center h-screen">
+                <h1 class=" text-[170px] font-normal font-anton">ALPHABET CLASH</h1>
+                <p class="font-medium text-xl">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+                <button id="home-btn"
+                    class="text-black bg-white px-8 py-5 rounded-xl font-semibold text-2xl mt-14 hover:bg-[#FFFFFFCC] transition-[500ms]">Play
+                    Now</button>
+            </div>
+            <!-- Play Ground Page -->
+            <div id="play-ground" class="flex flex-col items-center hidden">
+                <div
+                    class="artboard border-[20px] mt-14 border-[rgba(1,3,19,0.80)] rounded-2xl bg-[rgba(255,255,255,0.70)] artboard-horizontal phone-6">
+                    <div class="flex justify-center">
+                        <p class="text-lg font-medium bg-[#2F2941] text-white px-7 pb-3 rounded-b-2xl">Don't watch
+                            keyboard while playing...</p>
+                    </div>
+                    <div class="flex justify-center items-center h-full">
+                        <h1 id="display-text" class="text-9xl text-black font-semibold">Y</h1>
+                    </div>
+                </div>
+                <!-- key Board Start -->
+                <div class="mt-14">
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">q</kbd>
+                        <kbd class="kbd">w</kbd>
+                        <kbd class="kbd">e</kbd>
+                        <kbd class="kbd">r</kbd>
+                        <kbd class="kbd">t</kbd>
+                        <kbd class="kbd">y</kbd>
+                        <kbd class="kbd">u</kbd>
+                        <kbd class="kbd">i</kbd>
+                        <kbd class="kbd">o</kbd>
+                        <kbd class="kbd">p</kbd>
+                    </div>
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">a</kbd>
+                        <kbd class="kbd">s</kbd>
+                        <kbd class="kbd">d</kbd>
+                        <kbd class="kbd">f</kbd>
+                        <kbd class="kbd">g</kbd>
+                        <kbd class="kbd">h</kbd>
+                        <kbd class="kbd">j</kbd>
+                        <kbd class="kbd">k</kbd>
+                        <kbd class="kbd">l</kbd>
+                    </div>
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">z</kbd>
+                        <kbd class="kbd">x</kbd>
+                        <kbd class="kbd">c</kbd>
+                        <kbd class="kbd">v</kbd>
+                        <kbd class="kbd">b</kbd>
+                        <kbd class="kbd">n</kbd>
+                        <kbd class="kbd">m</kbd>
+                        <kbd class="kbd">/</kbd>
+                    </div>
+                </div>
+                <!-- Key Board End -->
+                <div class="mt-14 flex justify-between w-[1024px] mx-auto">
+                    <button class="flex gap-1 text-xl font-medium items-center text-white bg-[#894189] px-9 py-4 rounded-[30px]">Life <img src="images/life.svg" alt=""> <span> 1</span></button>
+                    <button id="start-btn" class="flex gap-1 text-xl font-medium items-center text-white bg-sky-400 px-9 py-4 rounded-2xl">Start</span></button>
+                    <button class="flex gap-1 text-xl font-medium items-center text-white bg-[#360490] px-9 py-4 rounded-[30px]">Score <img src="images/doller.png" alt=""> <span> 1</span></button>
+                </div>
+            </div>
+
+            <!-- Score Page -->
+            <div class="h-screen flex justify-center items-center text-center hidden">
+                <div class="space-y-4 p-12 bg-[linear-gradient(121deg,rgba(255,255,255,0.56)0%,rgba(152,151,151,0.00)102.2%)] rounded-2xl">
+                    <h1 class="text-6xl font-semibold text-white">Score : <span class="font-normal">14</span></h1>
+                    <button
+                    class="text-black bg-white px-8 py-5 rounded-xl font-semibold text-2xl hover:bg-[#FFFFFFCC] transition-[500ms]">Play
+                    Again</button>
+                    <p class="font-medium text-xl text-white">Practice will make you Pro</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- js file link  -->
+    <script src="js/utility.js"></script>
+    <script src="js/Dom.js"></script>
+</body>
+
+</html>
